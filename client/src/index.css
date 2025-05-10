@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+:root {
+  --primary-color: #f06292;  /* Light Pink */
+  --primary-hover: #e91e63;  /* Slightly darker pink */
+  --secondary-color: #34a853; /* Google Green for positive/success states */
+  --danger-color: #ea4335;    /* Google Red for negative/error states */
+  --warning-color: #fbbc04;   /* Google Yellow for warnings */
+  --background-light: #ffffff;
+  --background-off-white: #fafafa;
+  --card-background: #ffffff;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --text-dark: #202124;
+  --text-secondary: #5f6368;
+  --text-muted: #80868b;
+  --border-color: #f8bbd0;  /* Light pink border */
+  --input-background: #ffffff;
+  --toastify-color-light: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', 'Google Sans', sans-serif;
+  background-color: var(--background-off-white);
+  color: var(--text-dark);
+  line-height: 1.6;
+  font-size: 16px;  /* Base font size increased */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Google Sans', 'Roboto', sans-serif;
+  font-weight: 500;
+  color: var(--text-dark);
+}
+
+h1 { font-size: 2.2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.5rem; }
+h4 { font-size: 1.3rem; }
+h5 { font-size: 1.1rem; }
+h6 { font-size: 1rem; }
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--primary-hover);
+}
+
+button {
+  cursor: pointer;
+  font-family: 'Google Sans', 'Roboto', sans-serif;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 18px;  /* Increased padding */
+  transition: all 0.2s ease;
+  font-size: 1rem;  /* Increased button text size */
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-hover);
+  box-shadow: 0 1px 3px var(--shadow-color);
+}
+
+.btn-secondary {
+  background-color: white;
+  color: var(--primary-color);
+  border: 1px solid var(--border-color);
+}
+
+.btn-secondary:hover {
+  background-color: #fce4ec;  /* Very light pink background on hover */
+  box-shadow: 0 1px 3px var(--shadow-color);
+}
+
+input, button, textarea, select {
+  font-family: inherit;
+  font-size: 1rem;  /* Increased font size for form elements */
+}
+
+input, textarea, select {
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 10px 14px;  /* Increased padding */
+  background-color: var(--input-background);
+  color: var(--text-dark);
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.card {
+  background-color: var(--card-background);
+  border-radius: 12px;
+  box-shadow: 0 1px 3px var(--shadow-color);
+  padding: 20px;  /* Increased padding */
+  margin-bottom: 20px;  /* Increased margin */
+}
+
+/* Utility Classes */
+.text-center {
+  text-align: center;
+}
+
+.mt-1 { margin-top: 0.5rem; }
+.mt-2 { margin-top: 1rem; }
+.mt-3 { margin-top: 1.5rem; }
+.mt-4 { margin-top: 2rem; }
+.mt-5 { margin-top: 2.5rem; }
+
+.mb-1 { margin-bottom: 0.5rem; }
+.mb-2 { margin-bottom: 1rem; }
+.mb-3 { margin-bottom: 1.5rem; }
+.mb-4 { margin-bottom: 2rem; }
+.mb-5 { margin-bottom: 2.5rem; }
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 10px;  /* Slightly wider scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background-off-white);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f8bbd0;  /* Light pink scrollbar */
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #f48fb1;  /* Slightly darker pink on hover */
+} 
